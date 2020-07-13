@@ -1,0 +1,234 @@
+---
+title: "Reporte de análisis de la Calidad del Aire"
+author: "Pablo Busch Hopfenblatt"
+date: "`r format(Sys.time(),'%d-%m-%Y')`"
+leng: es-es
+output:
+  powerpoint_presentation:
+    slide_level: 2 # use this to override default (# es seccion, ## nueva slide)
+    reference_doc: FormatoReporte.pptx
+params:
+  reg: 'M'
+  cont: 'mp2.5'
+  metric: "Horario"
+  enLinea: !r c(T,F)
+  estaciones: "all"
+  prov: "all"
+  comunas: "all"
+  fecha_inicio: "2016-01-01"
+  fecha_fin: "2019-12-31"
+  descarga_datos: !r TRUE
+---
+```{r global_options, include=F}
+#Opciones globaleS: No mostrar por defecto el codigo, ni warnings ni mensajes y ejecuta el codigo a pesar de errores. Figuras centradas
+knitr::opts_chunk$set(echo=F, warning=FALSE, message=FALSE, error = F, dpi=300,
+                      ft.left=2.5,
+                      fig.align = 'center',fig.pos='H', fig.width=8.5, fig.height=5)
+```
+
+```{r Librerías/Paquetes, include = FALSE}
+source("Scripts/00-CargaLibrerias.R", encoding = "UTF-8")
+source("Scripts/00-Funciones.R", encoding = "UTF-8")
+```
+
+```{r setea parametros}
+reg <- params$reg %>% as.character()
+cont <- params$cont
+metric <- params$metric
+enLinea <- params$enLinea
+estaciones <- params$estaciones
+prov <- params$prov 
+comunas <- params$comunas 
+fecha_inicio <- params$fecha_inicio
+fecha_fin <- params$fecha_fin %>% as_date
+descarga_datos <- params$descarga_datos
+```
+
+```{r scrap data}
+if (descarga_datos){
+  source("Scripts/04-scrap_sinca.R", encoding = "UTF-8")
+}
+```
+
+```{r script load data}
+source("Scripts/05-load_data.R", encoding = "UTF-8")
+```
+
+```{r script feat data}
+source("Scripts/06-feat_data.R", encoding = "UTF-8")
+```
+
+```{r script analisis}
+source("Scripts/07-analisis.R", encoding = "UTF-8")
+```
+
+```{r script mapa}
+source("Scripts/08-mapa.R", encoding = "UTF-8")
+```
+
+## Notas
+
+* Esta presentación fue generada automáticamente a partir de datos de calidad del aire del SINCA
+- Interesa presentar un resumen genérico de la situación por zona geográfica para determinado contaminante
+- Un análisis más profundo requiere de un trabajo específico con los datos y escapa al alcance de este reporte
+
+# DESCRIPCIÓN DATOS
+
+## Información descriptiva
+
+- Región: **`r reg`**
+- Contaminante analizado: **`r cont`**
+- Periodo temporal: **`r fecha_inicio`** a **`r fecha_fin`**
+- Métrica: **`r metric`**
+- Total de datos válidos levantados: **`r nrow(df) %>% format(big.mark = " ", decimal.mark = ".", scientific = F)`**
+  + Se dejaron únicamente los días con al menos el 75% de datos de concentración
+- Fuente: *https://sinca.mma.gob.cl/*
+
+
+## Mapa Estaciones de Monitoreo
+```{r Mapa Estaciones}
+m
+```
+
+## Estaciones de Monitoreo
+```{r Tabla Estaciones, ft.left=2}
+font_size <- if_else(n_estaciones>10, 12, 14)
+tabla_estacion %>% 
+  flextable() %>% 
+  fontsize(size = font_size, part = "all") %>% 
+  bold(j=1, bold=T) %>% bold(bold=T, part="header") %>% 
+  autofit(add_w = 0.1, add_h = 0.3) %>% 
+  align_text_col(align = "left", header = TRUE, footer = TRUE)
+```
+
+## Tecnicas de Medición
+```{r Tabla Tecnica, ft.left=1.5}
+tabla_tecnica %>% 
+  flextable() %>% 
+  fontsize(size = font_size, part = "all") %>% 
+  bold(j=1, bold=T) %>% bold(bold=T, part="header") %>% 
+  autofit(add_w = 0.1, add_h = 0.3) %>% 
+  align_text_col(align = "left", header = TRUE, footer = TRUE)
+```
+
+# RESUMEN DATOS DE CONCENTRACIÓN
+
+## Disponibilidad de datos diarios `r cont` [%]
+```{r tabla disponibilidad}
+tabla_disponibilidad %>% 
+  flextable() %>%
+  colformat_num(big.mark=" ", digits=1, j=colnames(tabla_disponibilidad)[-1],
+                na_str="s/i", suffix="%") %>%
+  fontsize(size = font_size, part = "all") %>% 
+  bold(j=1, bold=T) %>% bold(bold=T, part="header") %>% 
+  autofit(add_w = 0.1, add_h = 0.3)
+```
+
+## Promedio Anual `r cont` `r unidad`
+```{r tabla anual}
+tabla_anual %>% 
+  flextable() %>%
+  colformat_num(big.mark=" ", digits=1, j=colnames(tabla_diario)[-1],
+                na_str="s/i") %>%
+  fontsize(size = font_size, part = "all") %>% 
+  bold(j=1, bold=T) %>% bold(bold=T, part="header") %>% 
+  autofit(add_w = 0.1, add_h = 0.3) %>% 
+  footnote(1,1, as_paragraph(
+    paste("Norma anual es de:",norma_anual,unidad,sep=" ")),
+    part = "header")
+```
+
+## Percentil 98 Concentración diaria `r cont` `r unidad`
+```{r tabla diario}
+tabla_diario %>% 
+  flextable() %>% 
+  colformat_num(big.mark=" ", digits=1, j=colnames(tabla_diario)[-1], 
+                na_str="s/i") %>%
+  fontsize(size = font_size, part = "all") %>% 
+  bold(j=1, bold=T) %>% bold(bold=T, part="header") %>% 
+  autofit(add_w = 0.1, add_h = 0.3) %>% 
+    footnote(1,1, as_paragraph(
+    paste("Norma diaria es de:",norma_diaria,unidad,sep=" ")),
+    part = "header")
+```
+
+## Promedio trianual por estación `r cont` `r unidad`
+```{r}
+m_anual
+```
+
+
+# SERIES DE TIEMPO
+
+## Resumen datos horarios `r cont` `r unidad`
+```{r summary plot, fig.cap="Se muestran series temporales, porcentaje de datos por año y distribución de las concentraciones"}
+quiet(summaryPlot(df_openAir, pollutant= cont, date.breaks = 6,xlab='Fecha'))
+```
+
+## Serie temporal promedio diario `r cont`  `r unidad`
+```{r}
+serie_tiempo
+```
+
+## Tendencia mensual `r cont` `r unidad`
+```{r}
+tendencia_mensual
+```
+
+## Promedio Anual `r cont` `r unidad`
+```{r}
+slope_graph
+```
+
+
+# PERFILES TEMPORALES
+
+## Perfiles temporales de la concentración `r cont` `r unidad`
+```{r time variation, fig.cap="Análisis temporales de la concentración"}
+df_openAir %>% timeVariation(pollutant = cont, hemisphere='southern',
+                             key.columns = 4, group = "site")
+```
+
+## Perfil horario `r cont` `r unidad`
+```{r time variation hora}
+print(time_variation, subset = "hour") 
+```
+
+## Perfil horario `r cont` `r unidad` por estacion climática 
+```{r time variation season}
+print(time_variation_season, split = c(1, 1, 1, 1), subset = "hour") 
+```
+
+## Heat Map: Perfil horario `r cont` `r unidad` por mes 
+```{r Heatmap}
+heat_map
+```
+
+# Descomposición Datos Calidad del Aire Mensuales
+
+## Descomposición por estacionalidad y tendencia
+- Se descompone el promedio mensual de concentraciones mediante el algoritmo *Seasonal Trend Decomposition* (STL) con el método *LOESS* para dividir una serie temporal en tres componentes:
+	+ Tendencia *(long-term trend)*
+	+ Estacionalidad *(seasonal fluctuation)*
+	+ Remanente *(remainder)*
+- Esta metodología fue desarrollada en el siguiente estudio:
+  + Cleveland, R. B., W. S. Cleveland, J. E. McRae, and I. Terpenning. 1990. “STL: A Seasonal-Trend Decomposition Procedure Based on Loess.” *Journal of Official Statistics* 6: 3–73.
+  
+## Descomposición por estacionalidad y tendencia
+- El gráfico permite observar los siguientes efectos:
+  + Si la tendencia de la concentración es positiva o negativa
+  + Magnitud del efecto de la estacionalidad (variaciones dentro de 1 año)
+  + Magnitud de los efectos no explicados *(random noise)*
+- Para resaltar mejor estos rasgos cada gráfico tiene su propia escala en el eje Y
+
+```{r Graficos Descomposicion, results = "asis"}
+# Loop dentro de un codigo para generar muchas slides
+sitios <- df_mes$site %>% unique()
+source("Scripts/09_STL.R", encoding = "UTF-8")
+for (s in sitios){
+  cat("\n\n## Descomposición de la serie temporal mensual ",cont," ", unidad," para la estación: ",s, "\n\n", sep="")
+  
+  f_stl_plot(df_mes, s) %>% print()
+}
+
+```
