@@ -39,6 +39,7 @@ df <- df %>% mutate(pollutant=case_when(
     contaminante_cod=='0NOX' ~ 'nox',
     contaminante_cod=='RAIN' ~ 'pp',
     contaminante_cod=='OCH4' ~ 'ch4',
+    contaminante_cod=='0CH4' ~ 'ch4',
     contaminante_cod=='NMHC' ~ 'hc_nm',
     contaminante_cod=='THCM' ~ 'hc_tot',
     contaminante_cod=='CORG' ~ 'c_org',
@@ -161,8 +162,19 @@ spgeo_19 <- spTransform(sputm_19, CRS("+proj=longlat +ellps=WGS84 +datum=WGS84")
 
 # Traspaso las coordenadas segun su huso
 df <- df %>% 
-  mutate(longitud=if_else(huso==19, spgeo_19$easting, spgeo_18$easting),
-         latitud=if_else(huso==19, spgeo_19$northing, spgeo_18$northing))
+  mutate(longitud_utm=if_else(huso==19, spgeo_19$easting, spgeo_18$easting),
+         latitud_utm=if_else(huso==19, spgeo_19$northing, spgeo_18$northing))
+
+# Ver que estacion este en Chile
+library(maps)
+df <- df %>% 
+  mutate(pais=map.where(database="world", longitud_utm, latitud_utm))
+
+## Si la estacion esta en chile dejo las coord calculadas, en caso contrario las scrapeadas
+df <- df %>% mutate(
+  longitud=if_else(pais=="Chile", longitud_utm, longitud),
+  latitud=if_else(pais=="Chile", latitud_utm, latitud),
+  latitud_utm=NULL, longitud_utm=NULL, pais=NULL)
 
 rm(coord)
 
