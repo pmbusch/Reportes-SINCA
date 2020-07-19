@@ -14,7 +14,7 @@ f_scrap_sinca <- function(url, file_name = "Descarga.csv", remover_file=T){
   download.file(url,destfile = destino)
   
   # csv2 uses sep=; and decimal mark=,
-  df_conc <- read_delim(destino, delim=";", na = c("NA"), col_types="dddddd",
+  df_conc <- read_delim(destino, delim=";", na = c("NA"), col_types="ccdddd",
                         locale = locale(decimal_mark = ","))
   spec(df_conc)
   df_conc$X6 <- NULL # columna adicional
@@ -58,15 +58,11 @@ f_scrap_sinca <- function(url, file_name = "Descarga.csv", remover_file=T){
   
   # Crear date ------------
   df_conc<- df_conc %>% 
-    mutate(date=paste(str_sub(fecha,5,6),str_sub(fecha,3,4),str_sub(fecha,1,2),sep='-'),
-           horario=ifelse(hora<1000,paste(0,hora/100,sep=''),hora/100) %>% paste(.,'00',sep=':'),
+    mutate(date=paste(str_sub(fecha,5,6),
+                      str_sub(fecha,3,4),
+                      str_sub(fecha,1,2),sep='-'),
+           horario=paste(str_sub(hora,1,2),'00',sep=':'),
            date=paste(date,horario,sep=' '))
-  
-  df_conc<- df_conc %>% 
-    mutate(date=paste(str_sub(fecha,5,6),str_sub(fecha,3,4),str_sub(fecha,1,2),sep='-'),
-           horario=ifelse(hora<1000,paste(0,hora/100,sep=''),hora/100) %>% paste(.,'00',sep=':'),
-           date=paste(date,horario,sep=' '))
-  
   
   # Formato a date
   df_conc <- df_conc %>% 
