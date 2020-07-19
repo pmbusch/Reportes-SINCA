@@ -1,0 +1,199 @@
+sep=; 
+"region";"url_region";"estacion";"estacion_enlinea";"url_estacion";"provincia";"comuna";"coord_utm";"huso";"longitud";"latitud";"fecha_consulta";"n_parametros"
+"I";"/index.php/region/index/id/I";"Alto Hospicio";TRUE;"/index.php/estacion/index/id/157";"Iquique";"Alto Hospicio";"385118 E 7755989 N";"19";-70.1002241937709;-20.2904990614563;2020-07-16;8
+"II";"/index.php/region/index/id/II";"Antofagasta";TRUE;"/index.php/estacion/index/id/259";"Antofagasta";"Antofagasta";"358874 E 7387875 N";"19";-70.3833269141901;-23.6135524278948;2020-07-16;6
+"II";"/index.php/region/index/id/II";"Aukahuasi";FALSE;"/index.php/estacion/index/id/108";"El Loa";"Calama";"506481 E 7531673 N";"19";-68.9370698239037;-22.3207090367875;2020-07-16;4
+"II";"/index.php/region/index/id/II";"Bomberos";TRUE;"/index.php/estacion/index/id/178";"Tocopilla";"Tocopilla";"375319 E 7554741 N";"19";-70.2087566601592;-22.1078451151424;2020-07-16;2
+"II";"/index.php/region/index/id/II";"Centro";FALSE;"/index.php/estacion/index/id/128";"Tocopilla";"Tocopilla";"376516 E 7556334 N";"19";-70.1970325448389;-22.0935418270491;2020-07-16;3
+"II";"/index.php/region/index/id/II";"Chiu Chiu";TRUE;"/index.php/estacion/index/id/234";"El Loa";"Calama";"535953 E 7529230 N";"19";-68.650845698563;-22.342415584074;2020-07-16;11
+"II";"/index.php/region/index/id/II";"Club Deportivo 23 de Marzo";TRUE;"/index.php/estacion/index/id/207";"El Loa";"Calama";"506403 E 7516233 N";"19";-68.9377651691457;-22.4601962890963;2020-07-16;9
+"II";"/index.php/region/index/id/II";"Colegio Pedro Vergara Keller";TRUE;"/index.php/estacion/index/id/222";"El Loa";"Calama";"506895 E 7518221 N";"19";-68.9329917406762;-22.4422346608824;2020-07-16;9
+"II";"/index.php/region/index/id/II";"Compañía de Bomberos";FALSE;"/index.php/estacion/index/id/4";"Antofagasta";"Mejillones";"351468 E 7444654 N";"19";-70.4503183864246;-23.1001674340595;2020-07-16;11
+"II";"/index.php/region/index/id/II";"Escuela E-10";TRUE;"/index.php/estacion/index/id/274";"Tocopilla";"Tocopilla";"377352 E 7557219 N";"19";-70.1888629023797;-22.0856071964417;2020-07-16;22
+"II";"/index.php/region/index/id/II";"Escuela E-12";FALSE;"/index.php/estacion/index/id/39";"Tocopilla";"Tocopilla";"376731 E 7556849 N";"19";-70.1949095635131;-22.088905342285;2020-07-16;2
+"II";"/index.php/region/index/id/II";"Escuela Gabriela Mistral";FALSE;"/index.php/estacion/index/id/130";"Tocopilla";"Tocopilla";"376518 E 7556323 N";"19";-70.1970139983016;-22.0936413263383;2020-07-16;1
+"II";"/index.php/region/index/id/II";"Estación Centro";TRUE;"/index.php/estacion/index/id/275";"El Loa";"Calama";"507371 E 7516056 N";"19";-68.9283557446592;-22.461791412519;2020-07-16;23
+"II";"/index.php/region/index/id/II";"Ferrocarriles";FALSE;"/index.php/estacion/index/id/66";"Antofagasta";"Mejillones";"350205 E 7444908 N";"19";-70.4626228311641;-23.0977599426594;2020-07-16;7
+"II";"/index.php/region/index/id/II";"Gobernación";TRUE;"/index.php/estacion/index/id/270";"Tocopilla";"Tocopilla";"376284 E 7556725 N";"19";-70.1992513003001;-22.0899936437072;2020-07-16;5
+"II";"/index.php/region/index/id/II";"Hospital";FALSE;"/index.php/estacion/index/id/68";"Tocopilla";"María Elena";"509243 E 7516913 N";"19";-68.9101653827842;-22.4540401275498;2020-07-16;2
+"II";"/index.php/region/index/id/II";"Hospital el Cobre";TRUE;"/index.php/estacion/index/id/124";"El Loa";"Calama";"509427 E 7517292 N";"19";-68.9083793003033;-22.4506152156617;2020-07-16;13
+"II";"/index.php/region/index/id/II";"Iglesia";FALSE;"/index.php/estacion/index/id/2";"Tocopilla";"María Elena";"431963 E 7528848 N";"19";-69.6607392905644;-22.3448954012051;2020-07-16;1
+"II";"/index.php/region/index/id/II";"Jardín Infantil Integra";TRUE;"/index.php/estacion/index/id/1";"Antofagasta";"Mejillones";"352064 E 7444407 N";"19";-70.4445241224677;-23.102451310087;2020-07-16;12
+"II";"/index.php/region/index/id/II";"Juan Jose Latorre";TRUE;"/index.php/estacion/index/id/279";"Antofagasta";"Mejillones";"352346 E 7444100 N";"19";-70.4418008014635;-23.1052488332107;2020-07-16;11
+"II";"/index.php/region/index/id/II";"Paposo";FALSE;"/index.php/estacion/index/id/71";"Antofagasta";"Taltal";"352352 E 7233451 N";"19";-70.4631525069442;-25.0072626845264;2020-07-16;13
+"II";"/index.php/region/index/id/II";"Playa Blanca";FALSE;"/index.php/estacion/index/id/70";"Antofagasta";"Antofagasta";"356498 E 7381134 N";"19";-70.4072620697237;-23.6742141664046;2020-07-16;3
+"II";"/index.php/region/index/id/II";"Punto de Máximo Impacto";FALSE;"/index.php/estacion/index/id/72";"Antofagasta";"Taltal";"352524 E 7236146 N";"19";-70.4611606978188;-24.9829485835629;2020-07-16;20
+"II";"/index.php/region/index/id/II";"Rendic";FALSE;"/index.php/estacion/index/id/33";"Antofagasta";"Antofagasta";"359138 E 7387995 N";"19";-70.3807283982919;-23.6124918535443;2020-07-16;6
+"II";"/index.php/region/index/id/II";"San José";FALSE;"/index.php/estacion/index/id/69";"El Loa";"Calama";"507229 E 7532289 N";"19";-68.9298095689673;-22.3151409825377;2020-07-16;9
+"II";"/index.php/region/index/id/II";"Servicio Médico Legal";FALSE;"/index.php/estacion/index/id/12";"El Loa";"Calama";"505383 E 7516195 N";"19";-68.9476790657854;-22.4605431024185;2020-07-16;4
+"II";"/index.php/region/index/id/II";"Sierra Gorda ";TRUE;"/index.php/estacion/index/id/255";"Antofagasta";"Sierra Gorda";"467298 E 7468596 N";"19";-69.3188430254899;-22.8902324111945;2020-07-16;7
+"II";"/index.php/region/index/id/II";"Sur";FALSE;"/index.php/estacion/index/id/46";"Antofagasta";"Antofagasta";"366690 E 7363604 N";"19";-70.308916464497;-23.8333893995483;2020-07-16;4
+"II";"/index.php/region/index/id/II";"Sur";FALSE;"/index.php/estacion/index/id/51";"Tocopilla";"Tocopilla";"374794 E 7554836 N";"19";NA;NA;2020-07-16;2
+"II";"/index.php/region/index/id/II";"Tres Marias";TRUE;"/index.php/estacion/index/id/169";"Tocopilla";"Tocopilla";"377485 E 7560029 N";"19";-70.187361791435;-22.0602351346132;2020-07-16;10
+"II";"/index.php/region/index/id/II";"Villa Caspana";FALSE;"/index.php/estacion/index/id/3";"El Loa";"Calama";"507410 E 7514595 N";"19";-68.9279698520336;-22.474989977103;2020-07-16;3
+"III";"/index.php/region/index/id/III";"21 de Mayo";TRUE;"/index.php/estacion/index/id/201";"Huasco";"Huasco";"281938 E 6848939 N";"19";-71.2272117975004;-28.4679386251354;2020-07-16;4
+"III";"/index.php/region/index/id/III";"CAP";FALSE;"/index.php/estacion/index/id/45";"Chañaral";"Diego de Almagro";"449439 E 7077320 N";"19";-69.50704525646;-26.4234573508705;2020-07-16;10
+"III";"/index.php/region/index/id/III";"Copiapó";TRUE;"/index.php/estacion/index/id/223";"Copiapó";"Copiapó";"368470 E 6972981 N";"19";-70.3298969960593;-27.360070436809;2020-07-16;5
+"III";"/index.php/region/index/id/III";"Copiapo Sivica";TRUE;"/index.php/estacion/index/id/176";"Copiapó";"Copiapó";"369133 E 6971887 N";"19";-70.3233122971258;-27.3700082456468;2020-07-16;4
+"III";"/index.php/region/index/id/III";"Doña Ines";FALSE;"/index.php/estacion/index/id/114";"Chañaral";"Diego de Almagro";"452032 E 7076284 N";"19";-69.4810812301642;-26.4329012360062;2020-07-16;10
+"III";"/index.php/region/index/id/III";"EME F";TRUE;"/index.php/estacion/index/id/205";"Huasco";"Huasco";"282486 E 6849125 N";"19";-71.2215830613258;-28.4663524482406;2020-07-16;15
+"III";"/index.php/region/index/id/III";"EME M";TRUE;"/index.php/estacion/index/id/175";"Huasco";"Huasco";"282763 E 6848691 N";"19";-71.218837475891;-28.4703132476937;2020-07-16;9
+"III";"/index.php/region/index/id/III";"EME ME";TRUE;"/index.php/estacion/index/id/163";"Huasco";"Huasco";"279008 E 6849199 N";"19";NA;NA;2020-07-16;23
+"III";"/index.php/region/index/id/III";"Huasco II";TRUE;"/index.php/estacion/index/id/179";"Huasco";"Huasco";"281581 E 6849067 N";"19";-71.230831548242;-28.4667243449263;2020-07-16;10
+"III";"/index.php/region/index/id/III";"Huasco Sivica";TRUE;"/index.php/estacion/index/id/219";"Huasco";"Huasco";"282682 E 6848727 N";"19";-71.2196575026675;-28.4699750351304;2020-07-16;7
+"III";"/index.php/region/index/id/III";"Los Volcanes";TRUE;"/index.php/estacion/index/id/248";"Copiapó";"Copiapó";"371047 E 6971867 N";"19";-70.3039643535114;-27.3703708834599;2020-07-16;4
+"III";"/index.php/region/index/id/III";"Pabellón";FALSE;"/index.php/estacion/index/id/40";"Copiapó";"Tierra Amarilla";"378151 E 6940115 N";"19";-70.2353409895587;-27.657611569692;2020-07-16;2
+"III";"/index.php/region/index/id/III";"Paipote";TRUE;"/index.php/estacion/index/id/196";"Copiapó";"Copiapó";"374539 E 6967442 N";"19";-70.269116546273;-27.4106357218769;2020-07-16;5
+"III";"/index.php/region/index/id/III";"San Fernando";TRUE;"/index.php/estacion/index/id/139";"Copiapó";"Copiapó";"371592 E 6969334 N";"19";-70.2987215091501;-27.3932845402506;2020-07-16;5
+"III";"/index.php/region/index/id/III";"SM1 ";TRUE;"/index.php/estacion/index/id/243";"Huasco";"Huasco";"279357 E 6845277 N";"19";-71.2542583494662;-28.5005344425995;2020-07-16;2
+"III";"/index.php/region/index/id/III";"SM2";TRUE;"/index.php/estacion/index/id/192";"Huasco";"Huasco";"286412 E 6849717 N";"19";-71.1813991608382;-28.4616614357619;2020-07-16;2
+"III";"/index.php/region/index/id/III";"SM3 ";TRUE;"/index.php/estacion/index/id/252";"Huasco";"Huasco";"286750 E 6848592 N";"19";-71.1781573521909;-28.4718643876107;2020-07-16;2
+"III";"/index.php/region/index/id/III";"SM4 ";TRUE;"/index.php/estacion/index/id/214";"Huasco";"Huasco";"287841 E 6847562 N";"19";-71.167210044069;-28.4813331610151;2020-07-16;6
+"III";"/index.php/region/index/id/III";"SM5 ";TRUE;"/index.php/estacion/index/id/121";"Huasco";"Huasco";"289916 E 6847254 N";"19";-71.1460823232612;-28.484447537988;2020-07-16;2
+"III";"/index.php/region/index/id/III";"SM6 ";TRUE;"/index.php/estacion/index/id/258";"Huasco";"Freirina";"291871 E 6845160 N";"19";-71.1265013648841;-28.5036499701697;2020-07-16;2
+"III";"/index.php/region/index/id/III";"SM7 ";TRUE;"/index.php/estacion/index/id/187";"Huasco";"Freirina";"294836 E 6845838 N";"19";-71.0961031365579;-28.4980045782985;2020-07-16;2
+"III";"/index.php/region/index/id/III";"SM8 ";TRUE;"/index.php/estacion/index/id/265";"Huasco";"Freirina";"296285 E 6844810 N";"19";-71.0814892198731;-28.5075052628427;2020-07-16;6
+"III";"/index.php/region/index/id/III";"Tierra Amarilla";TRUE;"/index.php/estacion/index/id/224";"Copiapó";"Tierra Amarilla";"6960567 E 375128 N";"19";NA;NA;2020-07-16;5
+"IV";"/index.php/region/index/id/IV";"Andacollo";TRUE;"/index.php/estacion/index/id/171";"Elqui";"Andacollo";"299236 E 6654136 N";"19";-71.0861361539625;-30.2277602244762;2020-07-16;12
+"IV";"/index.php/region/index/id/IV";"Caimanes";FALSE;"/index.php/estacion/index/id/32";"Choapa";"Los Vilos";"298016 E 6465581 N";"19";-71.1365134943238;-31.9277451278238;2020-07-16;1
+"IV";"/index.php/region/index/id/IV";"Camisas";FALSE;"/index.php/estacion/index/id/8";"Choapa";"Salamanca";"315066 E 6471115 N";"19";-70.9552031617204;-31.8807518554945;2020-07-16;1
+"IV";"/index.php/region/index/id/IV";"Chacay";FALSE;"/index.php/estacion/index/id/9";"Choapa";"Los Vilos";"350388 E 6478539 N";"19";-70.5807567567853;-31.8189927232223;2020-07-16;1
+"IV";"/index.php/region/index/id/IV";"Chepiquilla";TRUE;"/index.php/estacion/index/id/156";"Elqui";"Andacollo";"299687 E 6651480 N";"19";-71.0819574129218;-30.2517873405938;2020-07-16;4
+"IV";"/index.php/region/index/id/IV";"Coiron";FALSE;"/index.php/estacion/index/id/137";"Choapa";"Salamanca";"3331969 E 6469032 N";"19";NA;NA;2020-07-16;1
+"IV";"/index.php/region/index/id/IV";"Coquimbo";TRUE;"/index.php/estacion/index/id/194";"Elqui";"Coquimbo";"274609 E 6682171 N";"19";-71.3359111671868;-29.9706484846619;2020-07-16;7
+"IV";"/index.php/region/index/id/IV";"Cuncumen ";TRUE;"/index.php/estacion/index/id/257";"Choapa";"Salamanca";"345907 E 6470680 N";"19";-70.6293316903568;-31.8892712538071;2020-07-16;14
+"IV";"/index.php/region/index/id/IV";"El Mauro";FALSE;"/index.php/estacion/index/id/15";"Choapa";"Los Vilos";"310031 E 6460710 N";"19";-71.0104488451494;-31.9737373083956;2020-07-16;1
+"IV";"/index.php/region/index/id/IV";"El Sauce";TRUE;"/index.php/estacion/index/id/150";"Elqui";"Andacollo";"298447 E 6653538 N";"19";-71.0944444110818;-30.2330223924944;2020-07-16;4
+"IV";"/index.php/region/index/id/IV";"Hospital";TRUE;"/index.php/estacion/index/id/268";"Elqui";"Andacollo";"299236 E 6654140 N";"19";-71.0861353921716;-30.2277241512993;2020-07-16;9
+"IV";"/index.php/region/index/id/IV";"Hotel Mina";FALSE;"/index.php/estacion/index/id/16";"Choapa";"Salamanca";"354828 E 6482864 N";"19";-70.5332152513101;-31.7805601557259;2020-07-16;1
+"IV";"/index.php/region/index/id/IV";"La Serena";TRUE;"/index.php/estacion/index/id/95";"Elqui";"Coquimbo";"282211 E 6687896 N";"19";-71.2560113121664;-29.9203957583954;2020-07-16;7
+"IV";"/index.php/region/index/id/IV";"Punta Chungo";FALSE;"/index.php/estacion/index/id/144";"Choapa";"Los Vilos";"264090 E 647024 N";"19";NA;NA;2020-07-16;1
+"IV";"/index.php/region/index/id/IV";"Quelen Alto";FALSE;"/index.php/estacion/index/id/17";"Choapa";"Salamanca";"326384 E 6469765 N";"19";-70.8358401005899;-31.8947090306186;2020-07-16;1
+"IV";"/index.php/region/index/id/IV";"Urmeneta - Plaza Centenario";TRUE;"/index.php/estacion/index/id/148";"Elqui";"Andacollo";"299480 E 6653245 N";"19";-71.0837716765867;-30.2358358606235;2020-07-16;4
+"IX";"/index.php/region/index/id/IX";"Las Encinas Temuco";TRUE;"/index.php/estacion/index/id/186";"Cautín";"Temuco";"706767 E 5708420 N";"18";-72.620705821348;-38.748716856527;2020-07-16;35
+"IX";"/index.php/region/index/id/IX";"Museo Ferroviario";FALSE;"/index.php/estacion/index/id/110";"Cautín";"Temuco";"711144 E 5710911 N";"18";-72.5711409411702;-38.7252530174477;2020-07-16;23
+"IX";"/index.php/region/index/id/IX";"Ñielol";TRUE;"/index.php/estacion/index/id/237";"Cautín";"Temuco";"710378 E 5710745 N";"18";-72.579894727054;-38.726930315475;2020-07-16;11
+"IX";"/index.php/region/index/id/IX";"Padre Las Casas";FALSE;"/index.php/estacion/index/id/18";"Cautín";"Padre las Casas";"708934 E 5705703 N";"19";-72.595024;-38.772463;2020-07-16;6
+"IX";"/index.php/region/index/id/IX";"Padre Las Casas II";TRUE;"/index.php/estacion/index/id/263";"Cautín";"Padre las Casas";"708625 E 5706593 N";"18";-72.5987915106651;-38.7647297790063;2020-07-16;24
+"M";"/index.php/region/index/id/M";"Cerrillos";TRUE;"/index.php/estacion/index/id/206";"Santiago";"Cerrillos";"341687 E 6292449 N";"19";-70.7042093293862;-33.4957805377479;2020-07-16;4
+"M";"/index.php/region/index/id/M";"Cerrillos I";FALSE;"/index.php/estacion/index/id/116";"Santiago";"Cerrillos";"340277 E 6292747 N";"19";-70.7193286606829;-33.4928842335523;2020-07-16;24
+"M";"/index.php/region/index/id/M";"Cerro Navia";TRUE;"/index.php/estacion/index/id/228";"Santiago";"Cerro Navia";"338984 E 6299360 N";"19";-70.7320550936643;-33.433070402768;2020-07-16;24
+"M";"/index.php/region/index/id/M";"El Bosque";TRUE;"/index.php/estacion/index/id/260";"Santiago";"El Bosque";"345313 E 6286825 N";"19";-70.6661628607822;-33.54701601897;2020-07-16;24
+"M";"/index.php/region/index/id/M";"Independencia";TRUE;"/index.php/estacion/index/id/272";"Santiago";"Independencia";"346488 E 6300681 N";"19";-70.6511386332829;-33.4222611899675;2020-07-16;22
+"M";"/index.php/region/index/id/M";"La Florida";TRUE;"/index.php/estacion/index/id/262";"Santiago";"La Florida";"352504 E 6290304 N";"19";-70.5881601035897;-33.5166668832046;2020-07-16;22
+"M";"/index.php/region/index/id/M";"Las Condes";TRUE;"/index.php/estacion/index/id/239";"Santiago";"Las Condes";"358305 E 6305906 N";"19";-70.5232561485338;-33.3767760480796;2020-07-16;31
+"M";"/index.php/region/index/id/M";"Parque O'Higgins";TRUE;"/index.php/estacion/index/id/273";"Santiago";"Santiago";"345673 E 6296019 N";"19";-70.6607022934447;-33.4641765050683;2020-07-16;28
+"M";"/index.php/region/index/id/M";"Pudahuel";TRUE;"/index.php/estacion/index/id/190";"Santiago";"Pudahuel";"337311 E 6298809 N";"19";-70.7501440879609;-33.4377853571256;2020-07-16;28
+"M";"/index.php/region/index/id/M";"Puente Alto";TRUE;"/index.php/estacion/index/id/233";"Cordillera";"Puente Alto";"352049 E 6282013 N";"19";-70.594430678157;-33.5913562403892;2020-07-16;24
+"M";"/index.php/region/index/id/M";"Quilicura";TRUE;"/index.php/estacion/index/id/271";"Santiago";"Quilicura";"339594 E 6308625 N";"19";-70.7238457658324;-33.3496312950099;2020-07-16;4
+"M";"/index.php/region/index/id/M";"Quilicura I";FALSE;"/index.php/estacion/index/id/149";"Santiago";"Quilicura";"337356 E 6306788 N";"19";-70.7482185408749;-33.3658568782831;2020-07-16;24
+"M";"/index.php/region/index/id/M";"Talagante";TRUE;"/index.php/estacion/index/id/197";"Talagante";"Talagante";"318945 E 6272298 N";"19";-70.9529961584255;-33.6738193129904;2020-07-16;22
+"V";"/index.php/region/index/id/V";"ARMAT";FALSE;"/index.php/estacion/index/id/5";"Valparaíso";"Quilpué";"273138 E 6341755 N";"19";-71.4292924605608;-33.0391029855343;2020-07-16;3
+"V";"/index.php/region/index/id/V";"Campiche";TRUE;"/index.php/estacion/index/id/182";"Valparaíso";"Puchuncaví";"270343 E 6375300 N";"19";-71.4508565979414;-32.73620138359;2020-07-16;24
+"V";"/index.php/region/index/id/V";"Catemu";TRUE;"/index.php/estacion/index/id/165";"San Felipe de Aconcagua";"Catemu";"316512 E 6371481 N";"19";-70.9591837560663;-32.7792963545011;2020-07-16;5
+"V";"/index.php/region/index/id/V";"Central Quintero";TRUE;"/index.php/estacion/index/id/129";"Valparaíso";"Quintero";"267262 E 6369644 N";"19";-71.4851263819197;-32.7865274698714;2020-07-16;10
+"V";"/index.php/region/index/id/V";"Centro Quintero";TRUE;"/index.php/estacion/index/id/204";"Valparaíso";"Quintero";"262853 E 6369407 N";"19";NA;NA;2020-07-16;25
+"V";"/index.php/region/index/id/V";"Chagres Meteorologia";TRUE;"/index.php/estacion/index/id/131";"San Felipe de Aconcagua";"Catemu";"31230 E 636645 N";"19";-70.960103273392;-32.805889016286;2020-07-16;15
+"V";"/index.php/region/index/id/V";"Colmo";TRUE;"/index.php/estacion/index/id/177";"Valparaíso";"Concón";"271850 E 6354848 N";"19";-71.4398245424086;-32.9208371021842;2020-07-16;26
+"V";"/index.php/region/index/id/V";"Concón";TRUE;"/index.php/estacion/index/id/185";"Valparaíso";"Concón";"264784 E 6354247 N";"19";-71.5154792162753;-32.9247557381984;2020-07-16;34
+"V";"/index.php/region/index/id/V";"Concón MMA";TRUE;"/index.php/estacion/index/id/202";"Valparaíso";"Concón";"265070 E 6354089 N";"19";-71.5124634502457;-32.9262411069871;2020-07-16;2
+"V";"/index.php/region/index/id/V";"Concón sur";FALSE;"/index.php/estacion/index/id/140";"Valparaíso";"Concón";"263631 E 6353317 N";"19";-71.5280379226329;-32.9328878760013;2020-07-16;5
+"V";"/index.php/region/index/id/V";"Cuerpo de Bomberos ";TRUE;"/index.php/estacion/index/id/141";"Quillota";"Quillota";"289762 E 6359166 N";"19";-71.2474237788773;-32.8855084171758;2020-07-16;24
+"V";"/index.php/region/index/id/V";"Junta de Vecinos";TRUE;"/index.php/estacion/index/id/89";"Valparaíso";"Concón";"263944 E 6353098 N";"19";-71.5247492125188;-32.9349290959081;2020-07-16;20
+"V";"/index.php/region/index/id/V";"La Calera";FALSE;"/index.php/estacion/index/id/7";"Quillota";"Calera";"294940 E 6370730 N";"19";-71.1895458524074;-32.7822528052744;2020-07-16;11
+"V";"/index.php/region/index/id/V";"La Cruz, Colbún";FALSE;"/index.php/estacion/index/id/13";"Quillota";"Calera";"291759 E 6363531 N";"19";-71.2251067921911;-32.846545164606;2020-07-16;20
+"V";"/index.php/region/index/id/V";"La Cruz, Melón";FALSE;"/index.php/estacion/index/id/14";"Quillota";"La Cruz";"291464 E 6367285 N";"19";-71.2274115884232;-32.8126513429053;2020-07-16;7
+"V";"/index.php/region/index/id/V";"La Greda";TRUE;"/index.php/estacion/index/id/278";"Valparaíso";"Puchuncaví";"268185 E 6373910 N";"19";-71.4742143059298;-32.7482762248068;2020-07-16;18
+"V";"/index.php/region/index/id/V";"La Palma";TRUE;"/index.php/estacion/index/id/142";"Quillota";"Quillota";"2933302 E 6358631 N";"19";NA;NA;2020-07-16;24
+"V";"/index.php/region/index/id/V";"Las Gaviotas";TRUE;"/index.php/estacion/index/id/193";"Valparaíso";"Concón";"267940 E 6355336 N";"19";-71.4814814097924;-32.9156162562679;2020-07-16;18
+"V";"/index.php/region/index/id/V";"Lo Campo";TRUE;"/index.php/estacion/index/id/210";"San Felipe de Aconcagua";"Panquehue";"322275 E 6369529 N";"19";-70.8980531413835;-32.7978421814396;2020-07-16;10
+"V";"/index.php/region/index/id/V";"Loncura";TRUE;"/index.php/estacion/index/id/208";"Valparaíso";"Quintero";"266226 E 6368689 N";"19";-71.4964200897907;-32.7949140997702;2020-07-16;34
+"V";"/index.php/region/index/id/V";"Los Andes";TRUE;"/index.php/estacion/index/id/266";"Los Andes";"Los Andes";"351534 E 6364623 N";"19";-70.5864752883109;-32.8464264106927;2020-07-16;23
+"V";"/index.php/region/index/id/V";"Manzanar";FALSE;"/index.php/estacion/index/id/6";"Quillota";"Quillota";"278154 E 6355829 N";"19";-71.3722246281917;-32.9132931112758;2020-07-16;22
+"V";"/index.php/region/index/id/V";"Meteorológica Principal";FALSE;"/index.php/estacion/index/id/109";"Valparaíso";"Puchuncaví";"267310 E 6371939 N";"19";-71.4840392128271;-32.7658546487644;2020-07-16;20
+"V";"/index.php/region/index/id/V";"Quilpue";TRUE;"/index.php/estacion/index/id/155";"Valparaíso";"Quilpué";"272673 E 6340819 N";"19";-71.4345000749348;-33.0474413247694;2020-07-16;4
+"V";"/index.php/region/index/id/V";"Quintero";TRUE;"/index.php/estacion/index/id/183";"Valparaíso";"Quintero";"262528 E 63711087 N";"19";-71.535303287094;-32.772516452112;2020-07-16;18
+"V";"/index.php/region/index/id/V";"Romeral";TRUE;"/index.php/estacion/index/id/253";"San Felipe de Aconcagua";"Catemu";"312181 E 6366428 N";"19";-71.0064269801658;-32.8241180976399;2020-07-16;8
+"V";"/index.php/region/index/id/V";"Rural 1";FALSE;"/index.php/estacion/index/id/145";"Quillota";"Calera";"195815 E 6371858 N";"19";NA;NA;2020-07-16;18
+"V";"/index.php/region/index/id/V";"San Pedro";TRUE;"/index.php/estacion/index/id/41";"Quillota";"Quillota";"287372 E 6353370 N";"19";-71.2742914076228;-32.9372883327218;2020-07-16;24
+"V";"/index.php/region/index/id/V";"Santa Margarita";TRUE;"/index.php/estacion/index/id/132";"San Felipe de Aconcagua";"Catemu";"318469 E 6371812 N";"19";-70.9382336584756;-32.7766372321929;2020-07-16;11
+"V";"/index.php/region/index/id/V";"Sur";TRUE;"/index.php/estacion/index/id/251";"Valparaíso";"Quintero";"267461 E 6368037 N";"19";-71.4834059796204;-32.801052169634;2020-07-16;22
+"V";"/index.php/region/index/id/V";"Terminal Concentrados";FALSE;"/index.php/estacion/index/id/73";"Valparaíso";"Puchuncaví";"267640 E 6373585 N";"19";-71.4801077246371;-32.7510902662868;2020-07-16;18
+"V";"/index.php/region/index/id/V";"Valle Alegre";TRUE;"/index.php/estacion/index/id/203";"Valparaíso";"Quintero";"271889 E 6367413 N";"19";-71.4363078564257;-32.8076046475203;2020-07-16;14
+"V";"/index.php/region/index/id/V";"Valparaiso";TRUE;"/index.php/estacion/index/id/174";"Valparaíso";"Valparaíso";"255891 E 6340183 N";"19";-71.6142353875432;-33.0495365969399;2020-07-16;2
+"V";"/index.php/region/index/id/V";"Ventanas";TRUE;"/index.php/estacion/index/id/188";"Valparaíso";"Puchuncaví";"267547 E 6474609 N";"19";-71.4564045647854;-31.8405423695608;2020-07-16;22
+"V";"/index.php/region/index/id/V";"Viña del Mar";TRUE;"/index.php/estacion/index/id/247";"Valparaíso";"Viña del Mar";"261803 E 6343569 N";"19";-71.5500974315639;-33.0203346362397;2020-07-16;35
+"VI";"/index.php/region/index/id/VI";"Casas de Peuco";FALSE;"/index.php/estacion/index/id/58";"Cachapoal";"Mostazal";"348550 E 6241714 N";"19";-70.6390309128772;-33.9541830164161;2020-07-16;27
+"VI";"/index.php/region/index/id/VI";"Cauquenes";TRUE;"/index.php/estacion/index/id/173";"Cachapoal";"Machalí";"356722 E 6209574 N";"19";-70.5559158964252;-34.2450852426433;2020-07-16;9
+"VI";"/index.php/region/index/id/VI";"Cipreses";TRUE;"/index.php/estacion/index/id/246";"Cachapoal";"Machalí";"365276 E 6207829 N";"19";-70.4633243122187;-34.2619610533571;2020-07-16;8
+"VI";"/index.php/region/index/id/VI";"Codegua";FALSE;"/index.php/estacion/index/id/113";"Cachapoal";"Codegua";"346716 E 6233063 N";"19";-70.660388433546;-34.0319071078377;2020-07-16;27
+"VI";"/index.php/region/index/id/VI";"Coya Población";TRUE;"/index.php/estacion/index/id/225";"Cachapoal";"Machalí";"359047 E 6214212 N";"19";-70.5299193813901;-34.2035897766496;2020-07-16;9
+"VI";"/index.php/region/index/id/VI";"MVC";FALSE;"/index.php/estacion/index/id/152";"Cachapoal";"Requinoa";"338706 E 6212755 N";"19";-70.7508895670263;-34.2137720552484;2020-07-16;21
+"VI";"/index.php/region/index/id/VI";"Rancagua I";TRUE;"/index.php/estacion/index/id/250";"Cachapoal";"Rancagua";"342015 E 6218523 N";"19";-70.7139314127525;-34.1622833239376;2020-07-16;35
+"VI";"/index.php/region/index/id/VI";"Rancagua II";TRUE;"/index.php/estacion/index/id/220";"Cachapoal";"Rancagua";"339842 E 6220527 N";"19";-70.7371261564243;-34.1438867851583;2020-07-16;14
+"VI";"/index.php/region/index/id/VI";"Rengo";TRUE;"/index.php/estacion/index/id/212";"Cachapoal";"Rengo";"329665 E 6192542 N";"19";-70.8529869591204;-34.394527035524;2020-07-16;21
+"VI";"/index.php/region/index/id/VI";"San Fernando";TRUE;"/index.php/estacion/index/id/244";"Colchagua";"San Fernando";"317503 E 6171746 N";"19";-70.9896709012778;-34.5798816256345;2020-07-16;23
+"VI";"/index.php/region/index/id/VI";"San Francisco de Mostazal";FALSE;"/index.php/estacion/index/id/112";"Cachapoal";"Mostazal";"342567 E 6238686 N";"19";-70.7043004128627;-33.9806012891271;2020-07-16;27
+"VI";"/index.php/region/index/id/VI";"Sewell";FALSE;"/index.php/estacion/index/id/65";"Cachapoal";"Machalí";"372504 E 6227642 N";"19";-70.3819217301556;-34.0842385356971;2020-07-16;8
+"VI";"/index.php/region/index/id/VI";"Subestación Candelaria";FALSE;"/index.php/estacion/index/id/59";"Cachapoal";"Codegua";"351495 E 6233158 N";"19";-70.6086238276186;-34.0317387050727;2020-07-16;10
+"VI";"/index.php/region/index/id/VI";"Totihue";FALSE;"/index.php/estacion/index/id/47";"Cachapoal";"Requinoa";"335025 E 6199971 N";"19";-70.7932763633366;-34.3284314400431;2020-07-16;14
+"VII";"/index.php/region/index/id/VII";"Curicó";TRUE;"/index.php/estacion/index/id/269";"Curicó";"Curicó";"296068 E 6127456 N";"19";-71.2339541819121;-34.9749435787699;2020-07-16;10
+"VII";"/index.php/region/index/id/VII";"El Boldo";FALSE;"/index.php/estacion/index/id/53";"Curicó";"Curicó";"296399 E 6127751 N";"19";-71.2302586231129;-34.9723520814571;2020-07-16;2
+"VII";"/index.php/region/index/id/VII";"La Florida";TRUE;"/index.php/estacion/index/id/276";"Talca";"Talca";"256889 E 6075395 N";"19";-71.6781188939112;-35.4352233439442;2020-07-16;23
+"VII";"/index.php/region/index/id/VII";"Linares";TRUE;"/index.php/estacion/index/id/181";"Linares";"Linares";"265805 E 6031030 N";"19";-71.5928744623123;-35.8369692862414;2020-07-16;7
+"VII";"/index.php/region/index/id/VII";"Teno, CEMENTOS BIO BIO";FALSE;"/index.php/estacion/index/id/31";"Curicó";"Teno";"302204 E 6139464 N";"19";-71.1639376595735;-34.8679560685979;2020-07-16;16
+"VII";"/index.php/region/index/id/VII";"Teno, ENLASA";FALSE;"/index.php/estacion/index/id/30";"Curicó";"Teno";"305205 E 6140221 N";"19";-71.1309502080423;-34.8617141933859;2020-07-16;12
+"VII";"/index.php/region/index/id/VII";"U.C. Maule";TRUE;"/index.php/estacion/index/id/230";"Talca";"Talca";"262216 E 6075477 N";"19";-71.6194679090692;-35.4357717479047;2020-07-16;11
+"VII";"/index.php/region/index/id/VII";"Universidad de Talca";TRUE;"/index.php/estacion/index/id/217";"Talca";"Talca";"260878 E 6078683 N";"19";-71.6332531371338;-35.4065738907982;2020-07-16;11
+"VIII";"/index.php/region/index/id/VIII";"21 de mayo";TRUE;"/index.php/estacion/index/id/236";"Biobío";"Los Angeles";"733331 E 5849585 N";"18";-72.3614706575401;-37.4711911170902;2020-07-16;9
+"VIII";"/index.php/region/index/id/VIII";"Balneario Curanilahue";TRUE;"/index.php/estacion/index/id/189";"Arauco";"Curanilahue";"647504 E 5850002 N";"18";-73.3316080408324;-37.4851231645302;2020-07-16;5
+"VIII";"/index.php/region/index/id/VIII";"Bocatoma";TRUE;"/index.php/estacion/index/id/277";"Concepción";"Hualpén";"667680 E 5925321 N";"19";-73.120527;-36.803034;2020-07-16;6
+"VIII";"/index.php/region/index/id/VIII";"Calabozo";TRUE;"/index.php/estacion/index/id/118";"Concepción";"Coronel";"668730 E 5903504 N";"18";-73.1037564588364;-36.9994858064849;2020-07-16;9
+"VIII";"/index.php/region/index/id/VIII";"Cayumanqui";TRUE;"/index.php/estacion/index/id/231";"Ñuble";"Quillón";"726479 E 5937184 N";"18";-72.4652968161307;-36.6840336930348;2020-07-16;2
+"VIII";"/index.php/region/index/id/VIII";"Cerro Merquín";TRUE;"/index.php/estacion/index/id/227";"Concepción";"Coronel";"664607 E 5901176 N";"18";-73.1495612649135;-37.0211914819976;2020-07-16;6
+"VIII";"/index.php/region/index/id/VIII";"CESFAM, Los Ángeles";FALSE;"/index.php/estacion/index/id/67";"Biobío";"Los Angeles";"733330 E 5850426 N";"19";-72.361758;-37.463426;2020-07-16;4
+"VIII";"/index.php/region/index/id/VIII";"Club de Empleados";TRUE;"/index.php/estacion/index/id/245";"Biobío";"Nacimiento";"705393 E 5846899 N";"19";-72.676405906677;-37.501844565823;2020-07-16;21
+"VIII";"/index.php/region/index/id/VIII";"Colicheu";TRUE;"/index.php/estacion/index/id/226";"Biobío";"Cabrero";"743195 E 5899021 N";"18";-72.26618148452;-37.0235413391694;2020-07-16;27
+"VIII";"/index.php/region/index/id/VIII";"Consultorio - San Vicente";TRUE;"/index.php/estacion/index/id/241";"Concepción";"Talcahuano";"667557 E 5934138 N";"18";-73.1236949146001;-36.7236901618213;2020-07-16;18
+"VIII";"/index.php/region/index/id/VIII";"Coronel Norte";TRUE;"/index.php/estacion/index/id/280";"Concepción";"Coronel";"664628 E 5902487 N";"19";-73.14909696579;-37.009021343988;2020-07-16;23
+"VIII";"/index.php/region/index/id/VIII";"Coronel Sur";TRUE;"/index.php/estacion/index/id/221";"Concepción";"Coronel";"665556 E 5899980 N";"18";-73.1386351465177;-37.0318001851311;2020-07-16;26
+"VIII";"/index.php/region/index/id/VIII";"ENAP Price";TRUE;"/index.php/estacion/index/id/105";"Concepción";"Hualpén";"667819 E 5926622 N";"18";-73.1191092624453;-36.7913625348782;2020-07-16;14
+"VIII";"/index.php/region/index/id/VIII";"Entre Ríos";TRUE;"/index.php/estacion/index/id/76";"Biobío";"Nacimiento";"706873 E 5846693 N";"18";-72.6596044429386;-37.503538205633;2020-07-16;4
+"VIII";"/index.php/region/index/id/VIII";"Hualqui";TRUE;"/index.php/estacion/index/id/242";"Concepción";"Hualqui";"684073 E 5905626 N";"18";-72.9319425105152;-36.9774904060896;2020-07-16;19
+"VIII";"/index.php/region/index/id/VIII";"Indura";TRUE;"/index.php/estacion/index/id/104";"Concepción";"Talcahuano";"668339 E 5928983 N";"18";-73.1138055656992;-36.7699979573062;2020-07-16;12
+"VIII";"/index.php/region/index/id/VIII";"INIA, Chillán";TRUE;"/index.php/estacion/index/id/215";"Ñuble";"Chillán";"760382 E 5946127 N";"18";-72.0893103884349;-36.5948398968339;2020-07-16;13
+"VIII";"/index.php/region/index/id/VIII";"Inpesca";TRUE;"/index.php/estacion/index/id/209";"Concepción";"Talcahuano";"669249 E 5932589 N";"18";-73.1044140770063;-36.7373463523279;2020-07-16;6
+"VIII";"/index.php/region/index/id/VIII";"JUNJI";TRUE;"/index.php/estacion/index/id/43";"Concepción";"Hualpén";"668152 E 5927795 N";"18";-73.1156377640984;-36.780734894625;2020-07-16;14
+"VIII";"/index.php/region/index/id/VIII";"Kingston College";TRUE;"/index.php/estacion/index/id/261";"Concepción";"Concepción";"673817 E 5927247 N";"18";-73.0520618128262;-36.7846497460433;2020-07-16;27
+"VIII";"/index.php/region/index/id/VIII";"Laja";TRUE;"/index.php/estacion/index/id/119";"Biobío";"Laja";"702974 E 5872964 N";"19";-72.710695266724;-37.267803138651;2020-07-16;21
+"VIII";"/index.php/region/index/id/VIII";"Lautaro";TRUE;"/index.php/estacion/index/id/213";"Biobío";"Nacimiento";"707166 E 5846063 N";"18";-72.6561147282371;-37.5091463404281;2020-07-16;21
+"VIII";"/index.php/region/index/id/VIII";"Libertad";FALSE;"/index.php/estacion/index/id/127";"Concepción";"Talcahuano";"132748 E 5928589 N";"19";-73.1113549395844;-36.7174186204456;2020-07-16;2
+"VIII";"/index.php/region/index/id/VIII";"Liceo Polivalente";TRUE;"/index.php/estacion/index/id/195";"Concepción";"Tomé";"682597 E 5947369 N";"18";-72.95852150094;-36.601716047451;2020-07-16;22
+"VIII";"/index.php/region/index/id/VIII";"Los Ángeles Oriente";TRUE;"/index.php/estacion/index/id/211";"Biobío";"Los Angeles";"736622 E 5850392 N";"18";-72.3245517336468;-37.4630883867487;2020-07-16;9
+"VIII";"/index.php/region/index/id/VIII";"MASISA Mapal";FALSE;"/index.php/estacion/index/id/27";"Concepción";"San Pedro de la Paz";"665684 E 5918259 N";"18";-73.1412039788697;-36.867088567651;2020-07-16;9
+"VIII";"/index.php/region/index/id/VIII";"Meteorológica, Chiguayante";TRUE;"/index.php/estacion/index/id/83";"Concepción";"Chiguayante";"674983 E 5912937 N";"19";-73.035786;-36.913214;2020-07-16;8
+"VIII";"/index.php/region/index/id/VIII";"Nueva  Aldea";TRUE;"/index.php/estacion/index/id/184";"Ñuble";"Ránquil";"727481 E 5940768 N";"18";-72.4551563266367;-36.6515169577836;2020-07-16;12
+"VIII";"/index.php/region/index/id/VIII";"Nueva Libertad";TRUE;"/index.php/estacion/index/id/240";"Concepción";"Talcahuano";"667962 E 5932742 N";"19";-73.118693;-36.735998;2020-07-16;22
+"VIII";"/index.php/region/index/id/VIII";"Punteras";TRUE;"/index.php/estacion/index/id/235";"Concepción";"Chiguayante";"674923 E 5911833 N";"18";-73.03612288871;-36.9233163145735;2020-07-16;17
+"VIII";"/index.php/region/index/id/VIII";"Puren";TRUE;"/index.php/estacion/index/id/216";"Ñuble";"Chillán";"759972 E 5943765 N";"18";-72.0930896791128;-36.6162177305052;2020-07-16;9
+"VIII";"/index.php/region/index/id/VIII";"Quillón";TRUE;"/index.php/estacion/index/id/254";"Ñuble";"Quillón";"725429 E 5930819 N";"18";-72.4751616654441;-36.7416070024368;2020-07-16;10
+"VIII";"/index.php/region/index/id/VIII";"San Vicente, Bomberos";FALSE;"/index.php/estacion/index/id/91";"Concepción";"Talcahuano";"667625 E 5934339 N";"18";-73.1229779052172;-36.7218671476296;2020-07-16;2
+"X";"/index.php/region/index/id/X";"Alerce";TRUE;"/index.php/estacion/index/id/198";"Llanquihue";"Puerto Montt";"675585 E 5414803 N";"19";-72.899522781372;-41.399169537038;2020-07-16;6
+"X";"/index.php/region/index/id/X";"Entre Lagos";FALSE;"/index.php/estacion/index/id/111";"Osorno";"Osorno";"196063 E 5490100 N";"18";NA;NA;2020-07-16;14
+"X";"/index.php/region/index/id/X";"Mirasol";TRUE;"/index.php/estacion/index/id/54";"Llanquihue";"Puerto Montt";"669585 E 5406017 N";"18";-72.9688284796434;-41.4795290395201;2020-07-16;11
+"X";"/index.php/region/index/id/X";"Osorno";TRUE;"/index.php/estacion/index/id/229";"Osorno";"Osorno";"659217 E 5505665 N";"18";-73.1186654148085;-40.5844982474739;2020-07-16;13
+"X";"/index.php/region/index/id/X";"Puerto Varas";TRUE;"/index.php/estacion/index/id/281";"Llanquihue";"Puerto Varas";"669783 E 5422635 N";"18";-72.9711189791496;-41.329893037124;2020-07-16;2
+"X";"/index.php/region/index/id/X";"Trapén Norte";FALSE;"/index.php/estacion/index/id/74";"Llanquihue";"Puerto Montt";"661451 E 5402767 N";"18";-73.0653264913587;-41.5104653984258;2020-07-16;9
+"X";"/index.php/region/index/id/X";"Trapén Sur";FALSE;"/index.php/estacion/index/id/93";"Llanquihue";"Puerto Montt";"659539 E 5401873 N";"19";-73.08804;-41.518765;2020-07-16;9
+"XI";"/index.php/region/index/id/XI";"Coyhaique";TRUE;"/index.php/estacion/index/id/238";"Coihaique";"Coyhaique";"729281 E 4948421 N";"18";-72.0610848052617;-45.5799363589342;2020-07-16;12
+"XI";"/index.php/region/index/id/XI";"Coyhaique II";TRUE;"/index.php/estacion/index/id/264";"Coihaique";"Coyhaique";"730152 E 4948488 N";"18";-72.0499668121408;-45.5790464564684;2020-07-16;21
+"XI";"/index.php/region/index/id/XI";"Vialidad";TRUE;"/index.php/estacion/index/id/166";"Aysén";"Aysén";"680977 E 4969547 N";"18";-72.6874589442635;-45.4041830719139;2020-07-16;6
+"XII";"/index.php/region/index/id/XII";"Punta Arenas";TRUE;"/index.php/estacion/index/id/191";"Magallanes";"Punta Arenas";"371526 E 4108390 N";"19";-70.9215067997816;-53.1583477998541;2020-07-16;2
+"XIV";"/index.php/region/index/id/XIV";"CESFAM Lago Ranco";FALSE;"/index.php/estacion/index/id/115";"Ranco";"Lago Ranco";"205001 E 5530769 N";"19";-72.4719426361623;-40.3215180733555;2020-07-16;14
+"XIV";"/index.php/region/index/id/XIV";"Consultorio Máfil";FALSE;"/index.php/estacion/index/id/126";"Valdivia";"Máfil";"635131 E 5607284 N";"19";-72.953728504395;-39.665625938014;2020-07-16;18
+"XIV";"/index.php/region/index/id/XIV";"Fundo La Ribera";FALSE;"/index.php/estacion/index/id/49";"Valdivia";"Máfil";"678287 E 5620971 N";"19";-72.925205;-39.542346;2020-07-16;8
+"XIV";"/index.php/region/index/id/XIV";"La Union";TRUE;"/index.php/estacion/index/id/180";"Ranco";"La Unión";"663446 E 5538659 N";"19";-73.076710459412;-40.286857441758;2020-07-16;6
+"XIV";"/index.php/region/index/id/XIV";"Valdivia";TRUE;"/index.php/estacion/index/id/267";"Valdivia";"Valdivia";"651593 E 5589460 N";"18";-73.2284702731719;-39.831346661127;2020-07-16;21
+"XIV";"/index.php/region/index/id/XIV";"Valdivia 2";TRUE;"/index.php/estacion/index/id/218";"Valdivia";"Valdivia";"649060 E 5592376 N";"18";-73.2587212460245;-39.8055335644292;2020-07-16;8
+"XIV";"/index.php/region/index/id/XIV";"Vivero Los Castaños";FALSE;"/index.php/estacion/index/id/94";"Valdivia";"Máfil";"660388 E 5601696 N";"19";-73.128677;-39.719218;2020-07-16;8
+"XV";"/index.php/region/index/id/XV";"Arica";TRUE;"/index.php/estacion/index/id/232";"Arica";"Arica";"363747 E 7955831 N";"19";-70.2905492243254;-18.4835271781409;2020-07-16;2
