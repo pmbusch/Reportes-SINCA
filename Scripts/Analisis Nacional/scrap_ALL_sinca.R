@@ -98,7 +98,7 @@ for (r in regiones){
     
     for (d in 1:nrow(df_descarga)){
       sitio <- df_descarga$estacion[d] %>% str_remove_all(" |'")
-      destino <- paste("Data/Provincias/",r,"/",p,"/",
+      destino <- paste("Data Scrap/Provincias/",r,"/",p,"/",
                        sitio,"_",
                        df_descarga$pollutant[d],
                        ".csv",sep="")
