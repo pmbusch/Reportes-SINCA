@@ -12,6 +12,14 @@ rmarkdown::render("Reporte_CalidadAire.Rmd",
                                 cont="mp2.5"),
                   output_file = paste("Reportes/Reporte", "prueba", sep="_"))
 
+rmarkdown::render("Reporte_CalidadAire.Rmd",
+                  params = list(reg="VIII",
+                                prov="Biobío",
+                                descarga_datos=T,
+                                cont="mp2.5"),
+                  output_file = paste("Reportes/Reporte", "pruebaMapa", sep="_"))
+
+
 
 # Imprimir reportes masivamente --------------
 source('Scripts/00-Funciones.R')

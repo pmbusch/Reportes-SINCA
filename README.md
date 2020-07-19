@@ -11,4 +11,11 @@ El reporte se puede generar con los siguientes parámetros:
 * Zona geográfica: Región, Provincia o Comunas
 * Contaminante
 * Periodo temporal de análisis
+
+Notas:
+	- En el Excel "Resumen_DatosEstacioneSINCA.xlsx" se pueden visualizar mediante tablas dinámicas los datos relativos  a las estaciones SINCA,
+	para poder realizar mejor la descarga y reporte de los datos de calidad del aire
 	
+Adicionalmente se incluyen análisis particulares a nivel nacional de los datos de contaminación de MP2.5, generando algunas visualizaciones interesantes.
+	
+
