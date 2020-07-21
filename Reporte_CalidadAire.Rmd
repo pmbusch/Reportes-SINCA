@@ -153,7 +153,7 @@ tabla_diario %>%
 ```
 
 ## Promedio trianual por estación `r cont` `r unidad`
-```{r}
+```{r mapa promedio trianual}
 m_anual
 ```
 
@@ -166,17 +166,17 @@ quiet(summaryPlot(df_openAir, pollutant= cont, date.breaks = 6,xlab='Fecha'))
 ```
 
 ## Serie temporal promedio diario `r cont`  `r unidad`
-```{r}
+```{r promedio diario}
 serie_tiempo
 ```
 
 ## Tendencia mensual `r cont` `r unidad`
-```{r}
+```{r mensual}
 tendencia_mensual
 ```
 
 ## Promedio Anual `r cont` `r unidad`
-```{r}
+```{r anual}
 slope_graph
 ```
 

@@ -57,7 +57,7 @@ df_map <- df_anual %>%
 
 m_anual <- ggmap(map, extent = "device")+
   geom_point(data=df_map, aes(x=longitud, y=latitud, col=valor, size=valor))+
-  scale_color_viridis_c(option = "plasma", name=label_conc)+
+  scale_color_viridis_c(option = "plasma", direction=-1, name=label_conc)+
   expand_limits(col=0, size=0)+
   scale_size(guide="none")+
   theme(axis.line = element_blank(),

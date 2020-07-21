@@ -130,8 +130,8 @@ heat_map <- df_horaMensual %>%
   ggplot( aes(x =month, y =hora, fill = valor, col=valor))+
   geom_tile(size=0.5) +
   facet_grid(year~site)+
-  scale_fill_viridis_c(option = "plasma", name = label_conc) +
-  scale_color_viridis_c(option = "plasma", name = label_conc)+
+  scale_fill_viridis_c(option = "plasma", direction=-1, name = label_conc) +
+  scale_color_viridis_c(option = "plasma", direction=-1, name = label_conc)+
   expand_limits(col=0, fill=0)+
   theme(axis.text.x = element_text(angle = 90),legend.title = element_text(size = 12),
         axis.line = element_blank(), axis.ticks = element_blank(),

@@ -10,7 +10,7 @@ rmarkdown::render("Reporte_CalidadAire.Rmd",
                                              "La Florida", "Independencia"),
                                 descarga_datos=T,
                                 cont="mp2.5"),
-                  output_file = paste("Reportes/Reporte", "prueba", sep="_"))
+                  output_file = paste("Reportes/Reporte", "Santiago", sep="_"))
 
 rmarkdown::render("Reporte_CalidadAire.Rmd",
                   params = list(reg="VIII",
