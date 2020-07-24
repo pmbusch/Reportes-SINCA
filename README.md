@@ -17,11 +17,11 @@ El reporte se puede generar con los siguientes parámetros:
 
 **Ejemplo de uso para generar reportes:**
 
-	\nrmarkdown::render("Reporte_CalidadAire.Rmd",\n
-					  params = list(reg="M",\n
-									estaciones=c("Las Condes", "Cerrillos","Puente Alto", "Pudahuel","La Florida", "Independencia"),\n
-									descarga_datos=T,\n
-									cont="mp2.5"),\n
-					  output_file = "Reportes/Reporte_Santiago")\n
+	rmarkdown::render("Reporte_CalidadAire.Rmd",
+					  params = list(reg="M",
+									estaciones=c("Las Condes", "Cerrillos","Puente Alto", "Pudahuel","La Florida", "Independencia"),
+									descarga_datos=T,
+									cont="mp2.5"),
+					  output_file = "Reportes/Reporte_Santiago")
 
 Adicionalmente se incluyen análisis particulares a nivel nacional de los datos de contaminación de MP2.5, generando algunas visualizaciones interesantes.
