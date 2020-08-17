@@ -85,7 +85,7 @@ source("Scripts/08-mapa.R", encoding = "UTF-8")
 - Fuente: *https://sinca.mma.gob.cl/*
 
 
-## Mapa Estaciones de Monitoreo
+## Ubicación estaciones de monitoreo
 ```{r Mapa Estaciones}
 m
 ```
@@ -101,7 +101,7 @@ tabla_estacion %>%
   align_text_col(align = "left", header = TRUE, footer = TRUE)
 ```
 
-## Tecnicas de Medición
+## Tecnicas de medición utilizadas
 ```{r Tabla Tecnica, ft.left=1.5}
 tabla_tecnica %>% 
   flextable() %>% 
@@ -113,7 +113,7 @@ tabla_tecnica %>%
 
 # RESUMEN DATOS DE CONCENTRACIÓN
 
-## Disponibilidad de datos diarios `r cont` [%]
+## Disponibilidad anual de datos diarios `r cont` [%]
 ```{r tabla disponibilidad}
 tabla_disponibilidad %>% 
   flextable() %>%
