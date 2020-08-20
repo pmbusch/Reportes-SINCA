@@ -10,11 +10,12 @@ source('Scripts/00-Funciones.R')
 source('Scripts/03_f_scrap_sinca.R')
 
 # Tipo de las variables: c character, d double, D date
-cols_type <- "ccclccccdddccccDDccDccccclcccccc"
+cols_type <- "dcccclccccdddccccDDccDccccclcccccc"
 df_estaciones <- read_delim("Data/DatosEstacioneSINCA.csv", 
                             delim = ";", skip = 1, na = c("NA"),
                             col_types = cols_type,
-                            locale = locale(encoding = "windows-1252"))
+                            locale = locale(date_format = "%d-%m-%y",
+                                            encoding = "windows-1252"))
 rm(cols_type)
 spec(df_estaciones)
 
@@ -109,7 +110,8 @@ for (d in 1:length(df_descarga$region)){
   
   # Agregar info adicional
   df_conc <- df_conc %>% 
-    mutate(site=df_descarga$estacion[d],
+    mutate(estacion=df_descarga$estacion[d],
+           site=df_descarga$site[d],
            region=df_descarga$region[d],
            provincia=df_descarga$provincia[d],
            comuna=df_descarga$comuna[d],
