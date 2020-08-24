@@ -4,7 +4,7 @@
 ## Lectura Archivo --------
 
 # Tipo de las variables: c character, d double, D date, T date time
-cols_type <- "cdTdddcccccdddccc"
+cols_type <- "cdTdddccccccdddccc"
 df <- read_delim("Data/Datos_Concentraciones.csv", delim = ";", skip = 1, na = c("NA"),
                  col_types = cols_type,
                  locale = locale(encoding = "windows-1252"))

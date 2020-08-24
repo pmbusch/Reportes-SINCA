@@ -9,8 +9,12 @@ rmarkdown::render("Reporte_CalidadAire.Rmd",
                                              "Puente Alto", "Pudahuel",
                                              "La Florida", "Independencia"),
                                 descarga_datos=T,
-                                cont="mp2.5"),
+                                cont="mp2.5",
+                                fecha_inicio= "2000-01-01",
+                                fecha_fin= "2020-08-23"),
                   output_file = paste("Reportes/Reporte", "Santiago", sep="_"))
+
+
 
 rmarkdown::render("Reporte_CalidadAire.Rmd",
                   params = list(reg="VIII",

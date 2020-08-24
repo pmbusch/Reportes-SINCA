@@ -35,7 +35,7 @@ tabla_diario <- df_diario %>%
   rename(estacion=site)
 
 ## GGPLOT -----------
-theme_set(theme_bw())
+theme_set(theme_bw(16)+theme(panel.grid.major = element_blank()))
 
 ## Time Variation -----------
 # Lo imprimo en un archivo temporal que dp elimino para evitar que vaya a la consola y al documento markdown
