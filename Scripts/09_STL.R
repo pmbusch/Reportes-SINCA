@@ -16,7 +16,7 @@ f_stl_plot <- function(datos, estacion){
   date_end <- max(df_dec$date)
   n_meses <- 12*(year(date_end)-year(date_start))+month(date_end)-month(date_start)+1
   
-  if (nrow(df_dec)==n_meses & n_meses>=24){
+  if (nrow(df_dec)==n_meses & n_meses>24){
     
     # convert to time series object
     df_ts <- ts(data = df_dec$valor, 

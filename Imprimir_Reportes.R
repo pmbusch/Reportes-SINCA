@@ -15,6 +15,15 @@ rmarkdown::render("Reporte_CalidadAire.Rmd",
                   output_file = paste("Reportes/Reporte", "Santiago", sep="_"))
 
 
+rmarkdown::render("Reporte_CalidadAire.Rmd",
+                  params = list(reg="XIV",
+                                prov="Valdivia",
+                                descarga_datos=T,
+                                cont="mp2.5",
+                                fecha_inicio= "2017-01-01",
+                                fecha_fin= "2020-08-25"),
+                  output_file = paste("Reportes/Reporte", "Valdvia", sep="_"))
+
 
 rmarkdown::render("Reporte_CalidadAire.Rmd",
                   params = list(reg="VIII",
