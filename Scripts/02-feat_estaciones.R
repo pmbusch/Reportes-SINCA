@@ -42,6 +42,7 @@ df <- df %>% mutate(pollutant=case_when(
     contaminante_cod=='0CH4' ~ 'ch4',
     contaminante_cod=='NMHC' ~ 'hc_nm',
     contaminante_cod=='THCM' ~ 'hc_tot',
+    contaminante_cod=='PM2D' ~ 'mp2.5_discrete',
     contaminante_cod=='CORG' ~ 'c_org',
     contaminante_cod=='CTOT' ~ 'c_tot',
     contaminante_cod=='TRSG' ~ 'trs',
@@ -169,6 +170,7 @@ df <- df %>%
 library(maps)
 df <- df %>% 
   mutate(pais=map.where(database="world", longitud_utm, latitud_utm))
+df$pais %>% unique()
 
 ## Si la estacion esta en chile dejo las coord calculadas, en caso contrario las scrapeadas
 df <- df %>% mutate(
@@ -180,7 +182,8 @@ rm(coord)
 
 ## Guardar como .csv -------------
 cat('sep=; \n',file = "Data/DatosEstacioneSINCA.csv")
-write.table(df,'Data/DatosEstacioneSINCA.csv',sep=';',row.names = F, append = T)
+write.table(df,'Data/DatosEstacioneSINCA.csv',sep=';',row.names = F, append = T,
+            fileEncoding="UTF-8")
 
 
 ## Estaciones unicas ------------
