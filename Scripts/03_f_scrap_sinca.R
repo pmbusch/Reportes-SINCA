@@ -18,6 +18,7 @@ f_scrap_sinca <- function(url, file_name = "Descarga.csv", remover_file=T){
                         locale = locale(decimal_mark = ","))
   spec(df_conc)
   df_conc$X6 <- NULL # columna adicional
+  df_conc$...6 <- NULL
   
   # If para asegurar que datos meteorologicos pasen igual como validados todos
   if (ncol(df_conc)<5){
@@ -37,7 +38,8 @@ f_scrap_sinca <- function(url, file_name = "Descarga.csv", remover_file=T){
     !is.na(preliminares) ~ "preliminares",
     !is.na(noValidados) ~ "noValidados",
     TRUE ~ "NA"))
-  df_conc %>% group_by(tipo_dato) %>% summarise(count=n())
+  
+  # df_conc %>% group_by(tipo_dato) %>% summarise(count=n())
   
   
   # remuevo filas duplicadas (por estado de Dato)
@@ -49,9 +51,9 @@ f_scrap_sinca <- function(url, file_name = "Descarga.csv", remover_file=T){
   # Asigno el valor y borro columnas
   df_conc <- df_conc %>% 
     mutate(valor = case_when(
-    tipo_dato=="validados" ~ validados,
-    tipo_dato=="preliminares" ~ preliminares,
-    tipo_dato=="noValidados" ~ noValidados),
+      tipo_dato=="validados" ~ validados,
+      tipo_dato=="preliminares" ~ preliminares,
+      tipo_dato=="noValidados" ~ noValidados),
     validados = NULL,
     preliminares = NULL,
     noValidados = NULL)

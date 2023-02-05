@@ -9,13 +9,20 @@
 source('Scripts/00-Funciones.R')
 source('Scripts/03_f_scrap_sinca.R')
 
-# Tipo de las variables: c character, d double, D date
-cols_type <- "dcccclccccdddccccDDccDccccclcccccc"
+# Tipo de las variables: c character, d double, D date, l: logic
+# cols_type <- "dcccclccccdddccccDDccDccccclcccccc"
+
+date_format_string <- "%Y-%m-%d"
+cols_type <- "ccclccccdddccccDDccDccccclccccccc"
 df_estaciones <- read_delim("Data/DatosEstacioneSINCA.csv", 
                             delim = ";", skip = 1, na = c("NA"),
                             col_types = cols_type,
-                            locale = locale(date_format = "%d-%m-%y",
-                                            encoding = "windows-1252"))
+                            locale = locale(
+                              date_format=date_format_string,
+                              encoding = "UTF-8"))
+                              # encoding = "windows-1252"))
+                              # date_format = "%d-%m-%y",
+
 rm(cols_type)
 spec(df_estaciones)
 
@@ -26,6 +33,16 @@ df_estaciones %>% names
 df_estaciones$region %>% unique()
 df_estaciones$pollutant %>% unique()
 
+# 2023: extract PM2.5, pp and wind - DONT runt the next lines to filter 
+# df_descarga <- df_estaciones %>% 
+#   filter(pollutant=="mp2.5") %>% 
+  # filter(str_detect(pollutant,"mp2.5|temp|wd|ws|pp|hr")) %>% 
+  # filter(pollutant!="mp2.5_discrete") %>% 
+  # filter(metrica=="Horario")
+  # filter(metrica=="Diario")
+
+# df_descarga %>% group_by(pollutant,metrica) %>% tally()
+df_descarga$pollutant %>% table()
 
 # REGION, ESTACIONES, CONTAMINANTES Y METRICA
 df_descarga <- df_estaciones %>%  
@@ -46,22 +63,22 @@ df_descarga <- df_descarga %>%
 # Validez Fechas ingresadas
 df_descarga<- df_descarga %>%  
   mutate(contaminante_fechaInicio = contaminante_fechaInicio %>% 
-           strptime(format='%Y-%m-%d') %>% as_date(),
+           strptime(format=date_format_string) %>% as_date(),
          contaminante_fechaFin = contaminante_fechaFin %>% 
-           strptime(format='%Y-%m-%d') %>% as_date(),
+           strptime(format=date_format_string) %>% as_date(),
          from = fecha_inicio %>% 
-           strptime(format='%Y-%m-%d') %>% as_date(),
+           strptime(format=date_format_string) %>% as_date(),
          to = fecha_fin %>% 
-           strptime(format='%Y-%m-%d') %>% as_date(),
+           strptime(format=date_format_string) %>% as_date(),
          inicio_valido = from>contaminante_fechaInicio,
          fin_valido = to<contaminante_fechaFin)
 
 # Dejar solamente fechas validas, si no esta dentro del rango se deja el valor limite
 df_descarga <- df_descarga %>% 
   mutate(from = if_else(inicio_valido, from, contaminante_fechaInicio)%>% 
-           strptime(format='%Y-%m-%d') %>% as_date(),
+           strptime(format=date_format_string) %>% as_date(),
          to = if_else(fin_valido, to, contaminante_fechaFin)%>% 
-           strptime(format='%Y-%m-%d') %>% as_date())
+           strptime(format=date_format_string) %>% as_date())
 
 # Fechas en formato descarga (ej: pasar de 2015-12-31 a 151231)
 df_descarga <- df_descarga %>% 
@@ -102,8 +119,8 @@ df <- data.frame(tipo_dato=as.character(),
 
 # Recorro los datos a descargar, almaceno la informacion en mi dataframe
 for (d in 1:length(df_descarga$region)){
-  # Descarga concentraciones
   
+  # Descarga concentraciones
   df_conc <- f_scrap_sinca(df_descarga$url_descarga[d],
                            file_name = paste(df_descarga$estacion[d], df_descarga$contaminante_cod[d],sep="_"),
                            remover_file = T)
@@ -131,5 +148,25 @@ for (d in 1:length(df_descarga$region)){
 # Guardar
 cat('sep=; \n',file = "Data/Datos_Concentraciones.csv")
 write.table(df,'Data/Datos_Concentraciones.csv',sep=';',row.names = F, append = T)
+
+
+# 2023 data
+# saveRDS(df, file = "Data/pm25_daily.rds")
+# df <- read_delim("Data/Datos_Concentraciones1.csv", delim = ";", skip = 1, na = c("NA"),
+#                  col_types = "cdTdddccccccdddccc",
+#                  locale = locale(encoding = "UTF-8"))
+# df2 <- read_delim("Data/Datos_Concentraciones2.csv", delim = ";", skip = 1, na = c("NA"),
+#                  col_types = "cdTdddccccccdddccc",
+#                  locale = locale(encoding = "UTF-8"))
+# df <- rbind(df,df2)
+# rm(df2)
+# 
+# saveRDS(df, file = "Data/pm25_hourly.rds")
+# saveRDS(filter(df,pollutant=="mp2.5"), file = "Data/pm25only_hourly.rds")
+# 
+# cat('sep=; \n',file = "Data/Datos_Concentraciones_horario.csv")
+# write.table(df,'Data/Datos_Concentraciones_horario.csv',sep=';',row.names = F, append = T)
+
+
 
 ## EoF

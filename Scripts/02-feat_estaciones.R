@@ -11,7 +11,7 @@ df %>% head()
 df %>% str()
 df %>% skim()
 
-# Estaciones en linea: 1807 de 2394
+# Estaciones en linea: 1807 de 2394 old. New is 1995 of 2586
 df %>% group_by(estacion_enlinea) %>% summarise(count=n(), freq= n()/nrow(df))
 
 
@@ -131,6 +131,17 @@ df <- df %>% mutate(ano_inicio=df$from %>% str_sub(0,2) %>% as.numeric() %>% {if
                mes_inicio=df$from %>% str_sub(3,4),
                mes_fin=df$to %>% str_sub(3,4)) 
 
+# Cambiar nombre estacion repetido
+df <- df %>% 
+  mutate(site=case_when(
+    estacion=="21 de Mayo" ~ paste0(estacion,"-",comuna),
+    estacion=="Hospital" ~ paste0(estacion,"-",comuna),
+    estacion=="La Florida" & comuna=="Talca" ~ paste0(estacion,"-",comuna),
+    estacion=="San Fernando" & comuna!="San Fernando" ~ paste0(estacion,"-",comuna),
+    estacion=="Sur" ~ paste0(estacion,"-",comuna),
+    T ~ estacion
+  ))
+df %>% group_by(site) %>% summarise(count=n_distinct(comuna))
 
 ## Coordenadas oficiales -------------
 # Usamos los datos en UTM pq en los mapas dan mas precicos que las lat/long extraidos
@@ -182,8 +193,7 @@ rm(coord)
 
 ## Guardar como .csv -------------
 cat('sep=; \n',file = "Data/DatosEstacioneSINCA.csv")
-write.table(df,'Data/DatosEstacioneSINCA.csv',sep=';',row.names = F, append = T,
-            fileEncoding="UTF-8")
+write.table(df,'Data/DatosEstacioneSINCA.csv',sep=';',row.names = F, append = T)
 
 
 ## Estaciones unicas ------------
